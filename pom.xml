@@ -1,0 +1,131 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.github.yuyenews</groupId>
+	<artifactId>goge</artifactId>
+	<version>0.1.2</version>
+	<packaging>pom</packaging>
+	<modules>
+		<module>goge-aop</module>
+		<module>goge-ioc</module>
+		<module>goge-core</module>
+		<module>goge-jdbc</module>
+		<module>goge-mvc</module>
+		<module>goge-netty</module>
+		<module>goge-server</module>
+	</modules>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>com.github.yuyenews</groupId>
+				<artifactId>goge-aop</artifactId>
+				<version>0.1.2</version>
+			</dependency>
+			<dependency>
+				<groupId>com.github.yuyenews</groupId>
+				<artifactId>goge-ioc</artifactId>
+				<version>0.1.2</version>
+			</dependency>
+			<dependency>
+				<groupId>com.github.yuyenews</groupId>
+				<artifactId>goge-mvc</artifactId>
+				<version>0.1.2</version>
+			</dependency>
+			<dependency>
+				<groupId>com.github.yuyenews</groupId>
+				<artifactId>goge-core</artifactId>
+				<version>0.1.2</version>
+			</dependency>
+			<dependency>
+				<groupId>com.github.yuyenews</groupId>
+				<artifactId>goge-netty</artifactId>
+				<version>0.1.2</version>
+			</dependency>
+
+			<dependency>
+				<groupId>com.github.yuyenews</groupId>
+				<artifactId>goge-jdbc</artifactId>
+				<version>0.1.2</version>
+			</dependency>
+
+			<dependency>
+				<groupId>com.github.yuyenews</groupId>
+				<artifactId>goge-server</artifactId>
+				<version>0.1.2</version>
+			</dependency>
+
+			<dependency>
+				<groupId>io.netty</groupId>
+				<artifactId>netty-all</artifactId>
+				<version>5.0.0.Alpha2</version>
+			</dependency>
+
+			<dependency>
+				<groupId>com.alibaba</groupId>
+				<artifactId>fastjson</artifactId>
+				<version>1.2.47</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.slf4j</groupId>
+				<artifactId>slf4j-api</artifactId>
+				<version>1.7.25</version>
+			</dependency>
+			<dependency>
+				<groupId>org.slf4j</groupId>
+				<artifactId>slf4j-jdk14</artifactId>
+				<version>1.7.25</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.ow2.asm</groupId>
+				<artifactId>asm</artifactId>
+				<version>5.2</version>
+			</dependency>
+			<dependency>
+				<groupId>cglib</groupId>
+				<artifactId>cglib</artifactId>
+				<version>3.2.5</version>
+			</dependency>
+
+			<dependency>
+				<groupId>mysql</groupId>
+				<artifactId>mysql-connector-java</artifactId>
+				<version>8.0.11</version>
+			</dependency>
+			
+			<dependency>
+			    <groupId>org.mybatis</groupId>
+			    <artifactId>mybatis</artifactId>
+			    <version>3.4.6</version>
+			</dependency>
+			
+			<dependency>
+			    <groupId>com.alibaba</groupId>
+			    <artifactId>druid</artifactId>
+			    <version>1.1.10</version>
+			</dependency>
+			
+			<dependency>
+			    <groupId>com.github.pagehelper</groupId>
+			    <artifactId>pagehelper</artifactId>
+			    <version>4.1.3</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>
